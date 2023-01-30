@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+      .customer-support-form {
+        @apply p-8 bg-white rounded-lg shadow-md;
+      }
+
+      .form-field {
+        @apply mt-6;
+      }
+
+      .form-field label {
+        @apply block font-medium text-gray-700;
+      }
+
+      .form-field input,
+      .form-field select,
+      .form-field textarea {
+        @apply w-full mt-2 p-2 border border-gray-300 rounded-lg;
+      }
+
+      .form-field input:focus,
+      .form-field select:focus,
+      .form-field textarea:focus {
+        @apply border-teal-500;
+      }
+
+      .form-field .error-message {
+        @apply text-red-500 text-sm font-medium mt-2;
+      }
+
+      .submit-button {
+        @apply mt-6 rounded-lg bg-teal-500 text-white py-2 px-4 hover:bg-teal-600;
+      }
+    </style>
+    <title>Customer Support Form</title>
+  </head>
+  <body class="p-4">
+    <div class="customer-support-form">
+      <form>
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-field">
+          <label for="issue-type">Issue Type:</label>
+          <select id="issue-type" name="issue-type" required>
+            <option value="">Select an option</option>
+            <option value="bug">Bug</option>
+            <option value="feature-request">Feature Request</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="steps-to-reproduce">Steps to Reproduce:</label>
+          <textarea id="steps-to-reproduce" name="steps-to-reproduce"></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="additional-information">Additional Information:</label>
+<textarea id="additional-information" name="additional-information"></textarea>
+</div>
+
+    <div class="form-field">
+      <label for="attachments">Attachments:</label>
+      <input type="file" id="attachments" name="attachments" multiple />
+    </div>
+
+    <div class="form-field">
+      <button class="submit-button" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.production.min.js"></script>
+<script src="./index.js"></script>
+
+
+</body>
+
+
+</html>

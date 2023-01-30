@@ -1,0 +1,33 @@
+
+  .customer-support-form {
+    @apply p-8 bg-white rounded-lg shadow-md;
+  }
+
+  .form-field {
+    @apply mt-6;
+  }
+
+  .form-field label {
+    @apply block font-medium text-gray-700;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    @apply w-full mt-2 p-2 border border-gray-300 rounded-lg;
+  }
+
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    @apply border-teal-500;
+  }
+
+  .form-field .error-message {
+    @apply text-red-500 text-sm font-medium mt-2;
+  }
+
+  .submit-button {
+    @apply mt-6 rounded-lg bg-teal-500 text-white py-2 px-4 hover:bg-teal-600;
+  }
+
